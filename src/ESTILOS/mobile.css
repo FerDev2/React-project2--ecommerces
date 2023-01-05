@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-bar--main{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+}
+
+.list-options{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list-options ul {
+    list-style: none;
+    display: flex;
+}
