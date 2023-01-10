@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (min-width: 1024px) {
+
+    /*Lista del header*/
+    .nav-bar--main{
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 130px;
+        gap: 10px;
+    }
+    
+    .list-options--no{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    .list-options--no ul {
+        display: grid;
+        list-style: none;
+        justify-content: center;
+    }
+    
+    .list-options--links{
+        display: grid;
+        grid-template-columns: repeat(3, .3fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+    
+    .list-options--links li{
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .list-options--buttons{
+        display: grid;
+        grid-template-columns: repeat(3, .3fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+    
+    .list-options--buttons li{
+        align-self: center;
+        justify-self: center;
+    }
+
+    .list-button{
+        display: none;
+        text-align: center;
+        justify-self: center;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .list-menu{
+        display: none;
+    }
+    
+    
+    /*SECTION PART*/
+
+    .list-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        
+    }
+
+    .content{
+        display: grid;
+    }
+
+    .card-content{
+        display: grid;
+        
+    }
+
+    .btn-card{
+        display: grid;
+        background-color: rgb(243, 243, 243);
+        color: rgb(0, 0, 0);
+        border: solid 2px rgb(0, 0, 0);
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+        transition: all .5s ease-in-out;
+    }
+
+    .btn-card:hover{
+        background-color: rgb(5, 5, 5);
+        color: aliceblue;
+        transition: all .5s ease-in-out;
+    }
+
+}

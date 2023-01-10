@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    .list-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        
+    }
+
+    .content{
+        display: grid;
+    }
+
+    .card-content{
+        display: grid;
+        
+    }
+
+    .btn-card{
+        display: grid;
+        background-color: rgb(243, 243, 243);
+        color: rgb(0, 0, 0);
+        border: solid 2px rgb(0, 0, 0);
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+        transition: all .5s ease-in-out;
+    }
+
+    .btn-card:hover{
+        background-color: rgb(5, 5, 5);
+        color: aliceblue;
+        transition: all .5s ease-in-out;
+    }
+
+}

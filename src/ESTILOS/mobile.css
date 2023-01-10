@@ -1,21 +1,103 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .nav-bar--main{
     background-color: antiquewhite;
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 130px;
+}
+
+.list-options--no{
+    display: none;
 }
 
 .list-options{
-    display: none;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    grid-template-rows: 1fr 1fr auto;
+    z-index: 2;
+    border-radius: 20px;
+    animation: mover_up 1s ease-in-out;
+}
+
+/*ANIMACION PARA MOSTRAR LA LISTA DE CONTENIDOS*/
+@keyframes mover_up{
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes mover_down{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-600px);
+    }
 }
 
 .list-options ul {
+    display: grid;
     list-style: none;
-    display: flex;
+    justify-content: center;
 }
+
+.list-options--links{
+    grid-template-rows: repeat(3, .3fr);
+    margin: 0;
+    padding: 0;
+}
+
+.list-options--links li{
+    align-self: center;
+    justify-self: center;
+}
+
+.list-options--buttons{
+    grid-template-rows: repeat(2, .3fr);
+    margin: 0;
+    padding: 0;
+}
+
+.list-options--buttons li{
+    align-self: center;
+    justify-self: center;
+}
+
+.list-button{
+    text-align: center;
+    justify-self: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.list-menu{
+    justify-self: center;
+    align-self: center;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*SECTION PART*/
+
+.list-body{
+    display: grid;
+    gap: 20px;
+    
+}
+
+
+
+
