@@ -31,7 +31,7 @@ function App() {
   return (
     <userContext.Provider value={click}>
       <Header state = {askState} stateinit = {askState2}/>
-      {click ? <Section></Section> : <Carrito></Carrito>}
+      {click ? <Carrito></Carrito> : <Section></Section>}
       
     </userContext.Provider>
   );

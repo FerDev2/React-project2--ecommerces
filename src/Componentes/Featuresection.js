@@ -1,17 +1,21 @@
 import React from "react";
+import Carrito from "../Componentes/Carrito"
 
-const Featuresection = ({ imgport ,title, price, text}) => {
+
+const Featuresection = ({ data , addToCart}) => {
+
 
     return(
 
+
             <div className="content">
-                <img className='card-img-top' src={imgport}></img>
-                <div class="card-content">
-                   <h5 class="card-title">{title}</h5>
-                   <p class="card-text">{price}</p>
-                   <button className='btn-card' >{text}</button>
-                </div>
+                <img className='card-img-top' src={data.img}></img>
+                 <h2 class="card-title">{data.name}</h2>
+                 <p class="card-text">Price: {data.price}</p>
+                 <button className='btn-card' onClick={() => addToCart(data.id)}>Add to Cart</button>
             </div>
+            
+    
     );
 
 }

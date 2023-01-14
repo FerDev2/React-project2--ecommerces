@@ -98,6 +98,47 @@
     
 }
 
+/*SECTION CARRITO*/
+
+.list-carrito{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.box-buy{
+    width: 200px;
+}
+.box-buy img{
+    width: 100%;
+}
+
+.content-buttons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.button-less{
+     width: 50px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+.content-buttons p{
+    align-content: center;
+    margin: 0;
+}
+
+.button-plus{
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 
 
